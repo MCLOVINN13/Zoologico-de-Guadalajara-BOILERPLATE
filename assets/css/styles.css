@@ -744,8 +744,28 @@ body {
 /* CTA Section */
 .cta-section {
   padding: 120px 0;
-  background: var(--gradient-2);
+  /* Color base de la piel */
+  background-color: var(--gradient-2);
+  background-image: 
+    radial-gradient(
+      ellipse at 10% 20%, 
+      rgba(254, 216, 216, 0.7), /* Un rosa más notorio */
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 90% 30%, 
+      rgba(254, 232, 232, 0.7), 
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse at 70% 80%, 
+      rgba(254, 216, 216, 0.7), 
+      transparent 55%
+    );
+  /* Aqui se aplica un filtro SVG para el realismo del fondo */
+  filter: url(#ajolote-textura);
   text-align: center;
+
 }
 
 .cta-content {

@@ -4,13 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoologico de Guadalajara: Ajolote mexicano</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="assets/css/styles.css"> 
 </head>
 <body>
+  <svg style="position:absolute; height:0; width:0; overflow:hidden;">
+  <filter id="ajolote-textura">
+    <feTurbulence 
+      type="fractalNoise" 
+      baseFrequency="0.04" 
+      numOctaves="5" 
+      result="noise"/>
+      
+    <feDiffuseLighting 
+      in="noise" 
+      lighting-color="#ffe8e8" 
+      surfaceScale="2" 
+      result="light">
+      <feDistantLight azimuth="235" elevation="40" />
+    </feDiffuseLighting>
+    
+    <feComposite in="SourceGraphic" in2="light" operator="in" />
+  </filter>
+</svg>
 
     <header class="header">
         <div class="container navbar">
-            <a href="#" class="nav-link" style="font-weight: 700;">Zoologico de Guadalajara: Ajolote mexicano.</a>
+            <a href="#" class="nav-link" style="font-weight: 700;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB-_pBTq63sN5nuwPiB5pujKEs3ol1aMUQ_g&s" alt="Zoologico de Guadalajara" style="width: 
+            75%; height: 70%; margin-right: 10px;"></a>
             <nav>
                 <ul class="nav-menu list-unstyled">
                     <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
@@ -18,7 +38,7 @@
                     <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
                 </ul>
             </nav>
-            <button class="btn btn-primary" style="padding: 0.5rem;">Menú</button>
+            <a href="https://zooguadalajara.com.mx/" class="btn btn-primary" style="padding: 0.5rem;">¡Visita el sitio oficial del ZOO!</a>
         </div>
     </header>
     
@@ -263,8 +283,8 @@
       <h2 class="cta-title">Ayuda a Preservar Esta Especie Única</h2>
       <p class="cta-text">El ajolote mexicano es un tesoro nacional que necesita nuestra protección. Cada acción cuenta para garantizar su supervivencia.</p>
       <div class="cta-buttons">
-        <button class="btn-primary large" src="https://zooguadalajara.com.mx/">Visita el Zoológico</button>
-        <button class="btn-secondary large">Aprende Más</button>
+        <a href="https://zooguadalajara.com.mx/tickets/" class="btn-primary large" src="https://zooguadalajara.com.mx/">Visita el Zoológico</a>
+        <a href="https://zooguadalajara.com.mx/" class="btn-secondary large">Aprende Más</a>
       </div>
     </div>
   </div>
