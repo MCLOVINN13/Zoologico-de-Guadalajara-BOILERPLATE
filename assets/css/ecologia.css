@@ -31,16 +31,28 @@ img,video,svg,picture { max-width: 100%; height: auto; display: block; }
 .nav-link { color: var(--text-light); text-decoration: none; }
 
 /* Header */
-.header { position: sticky; top:0; z-index:100; background: rgba(10,19,34,0.8); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255,255,255,0.08); }
-.navbar { display:flex; align-items:center; justify-content: space-between; padding: 12px 0; }
-.nav-menu { display:flex; gap: 16px; }
+.header { position: sticky; top:0; z-index:100; background: rgba(10,19,34,0.8); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255,255,255,0.08); transition: all 0.3s ease; }
+/* Mantener color original del header al hacer scroll */
+.header.header-scrolled { background: rgba(10,19,34,0.8); color: var(--text-light); box-shadow: 1rem 4px 10px rgba(0,0,0,1); }
+.header.header-scrolled .navbar { padding: 8px 0; }
+.navbar { display:flex; align-items:center; justify-content: space-between; padding: 12px 0; gap: 1rem; flex-wrap: nowrap; min-height: clamp(32px, 6vw, 56px); }
+
+/* Marca e imagen responsive */
+.nav-brand { display:inline-flex; align-items:center; }
+.logo-img { height: clamp(32px, 6vw, 56px); width: auto; object-fit: contain; display:block; border-radius: 8px; box-shadow: var(--shadow-sm); }
+
+/* Menú siempre visible con wrap si es necesario */
+.nav-menu { display:flex; gap: 12px 16px; flex-wrap: wrap; }
 .nav-item .nav-link { padding: 8px 12px; color: var(--text-gray); }
 .nav-item .nav-link:hover { color: var(--text-light); }
 
+/* CTA del header: nunca más alto que el logo */
+.header-cta { display:inline-flex; align-items:center; justify-content:center; padding: 0 clamp(10px, 2vw, 18px); height: clamp(28px, 5vw, 48px); max-height: clamp(32px, 6vw, 56px); line-height:1; white-space: nowrap; font-size: clamp(12px, 1.4vw, 16px); }
+
 .btn { display:inline-block; font-weight:600; padding: 12px 18px; border-radius: 10px; text-decoration:none; transition: all .25s ease; }
-.btn-primary { background: var(--primary); color:#09202a; box-shadow: var(--shadow-sm); }
+.btn-primary { background: var(--primary); color:#09202a; padding: 9px 10px; border-radius: 7px; text-decoration:none; transition: all .25s ease; box-shadow: var(--shadow-sm); }
 .btn-primary:hover { background: var(--primary-dark); transform: translateY(-1px); box-shadow: var(--shadow-md); }
-.btn-secondary { background: rgba(255,255,255,0.08); color: var(--text-light); border: 1px solid rgba(255,255,255,0.15); }
+.btn-secondary { background: rgba(255,255,255,0.08); color: var(--text-light); padding: 9px 10px; border-radius: 7px; text-decoration:none; transition: all .25s ease; border: 1px solid rgba(255,255,255,0.15); }
 .btn-secondary:hover { background: rgba(255,255,255,0.16); transform: translateY(-1px); }
 .btn-primary.large, .btn-secondary.large { padding: 16px 28px; }
 

@@ -141,8 +141,8 @@ p {
 
 /* Estilo que se aplicará AL HACER SCROLL */
 .header.header-scrolled {
-  background: #f64efc; /* Cambia a fondo blanco */
-  color: #000000; /* Texto oscuro */
+  background-color: var(--color-bg); /* Mantener color original */
+  color: var(--color-text); /* Mantener color de texto original */
   padding: 0.8rem; /* Padding más pequeño */
   box-shadow: 1rem 4px 10px rgba(0,0,0,1); /* Añade sombra */
 }
@@ -151,11 +151,23 @@ p {
   display: flex; 
   justify-content: space-between; 
   align-items: center; 
+  gap: 1rem;
+  flex-wrap: nowrap;
+  min-height: clamp(32px, 6vw, 56px);
 } 
 
+/* Responsive brand/logo image */
+.nav-brand { display: inline-flex; align-items: center; }
+.logo-img { height: clamp(32px, 6vw, 56px); width: auto; object-fit: contain; display: block; }
+
+/* Ensure nav is always visible and wraps on small screens */
+.nav-menu { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; } 
+
 .nav-menu {
-  display: none; 
+  display: flex; 
   list-style: none;
+  gap: 0.5rem 1rem;
+  flex-wrap: wrap;
 } 
 
 .nav-link {
@@ -163,6 +175,19 @@ p {
   text-decoration: none; 
   padding: var(--space-xs); 
   display: block; 
+} 
+
+/* Header CTA responsive size: never exceeds logo height */
+.header-cta { 
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 0 clamp(10px, 2vw, 18px); 
+  height: clamp(28px, 5vw, 48px); 
+  max-height: clamp(32px, 6vw, 56px); 
+  line-height: 1; 
+  white-space: nowrap; 
+  font-size: clamp(12px, 1.4vw, 16px);
 } 
 
 @media (min-width: 992px) {
