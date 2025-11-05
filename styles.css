@@ -21,7 +21,7 @@
   --color-bg: #ffffff;
   --color-primary: #007bff; /* Color primario */
 } 
-
+Z
 /* 1. RESETEO Y NORMAS BÁSICAS */
 
 html {
@@ -130,10 +130,22 @@ p {
 /* 6. HEADER Y NAVEGACIÓN RESPONSIVA */
         
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background-color: var(--color-bg); 
   border-bottom: 1px solid #eeeeee; 
-  padding: var(--space-sm) 0; 
+  padding: var(--space-sm) 2rem; 
+  transition: all 0.3s ease;
 } 
+
+/* Estilo que se aplicará AL HACER SCROLL */
+.header.header-scrolled {
+  background: #f64efc; /* Cambia a fondo blanco */
+  color: #000000; /* Texto oscuro */
+  padding: 0.8rem; /* Padding más pequeño */
+  box-shadow: 1rem 4px 10px rgba(0,0,0,1); /* Añade sombra */
+}
 
 .navbar {
   display: flex; 
