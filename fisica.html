@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Física: Las Leyes del Universo</title>
+    <link rel="stylesheet" href="assets/css/fisica.css">
+</head>
+<body>
+  <svg style="position:absolute; height:0; width:0; overflow:hidden;">
+  <filter id="fisica-textura">
+    <feTurbulence 
+      type="fractalNoise" 
+      baseFrequency="0.04" 
+      numOctaves="5" 
+      result="noise"/>
+      
+    <feDiffuseLighting 
+      in="noise" 
+      lighting-color="#ffe6f0" 
+      surfaceScale="2" 
+      result="light">
+      <feDistantLight azimuth="235" elevation="40" />
+    </feDiffuseLighting>
+    
+    <feComposite in="SourceGraphic" in2="light" operator="in" />
+  </filter>
+</svg>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="nav-link nav-brand" aria-label="Inicio">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Standard_Model_of_Elementary_Particles.svg/800px-Standard_Model_of_Elementary_Particles.svg.png" alt="Física" style="width: 200px; height: auto; border-radius: 8px; object-fit: cover; margin-right: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.25);">
+            </a>
+            <nav>
+                <ul class="nav-menu list-unstyled">
+                    <li class="nav-item"><a href="fisica.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Zoológico de Guadalajara</a></li>
+                </ul>
+            </nav>
+            <a href="https://www.khanacademy.org/science/physics" class="btn btn-primary header-cta">Khan Academy: Física</a>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-badge">Ciencia Fundamental</span>
+    <h1 class="hero-title">Física: Las Leyes del Universo</h1>
+    <p class="hero-subtitle">Explora las fuerzas, la energía, la materia y el espacio-tiempo que gobiernan nuestro cosmos</p>
+    <div class="cta-buttons">
+      <a class="btn-primary" href="https://es.wikipedia.org/wiki/F%C3%ADsica" target="_blank" rel="noopener">Leer en Wikipedia</a>
+      <a class="btn-secondary" href="https://www.khanacademy.org/science/physics" target="_blank" rel="noopener">Khan Academy</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>Desliza para explorar</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- Introducción -->
+<section class="intro-section" id="secciones">
+  <div class="container">
+    <div class="intro-grid">
+      <div class="intro-image">
+        <div class="image-placeholder">
+          <span>⚛</span>
+        </div>
+      </div>
+      <div class="intro-text">
+        <h2 class="section-title">Física: Concepto y Contexto</h2>
+        <p class="intro-description">
+          La física es la ciencia que estudia las propiedades de la materia, la energía, el espacio y el tiempo, así como sus interacciones. Desde las partículas subatómicas hasta las galaxias, la física busca comprender los principios fundamentales que rigen el universo.
+        </p>
+        <p class="intro-description">
+          A través de la observación, experimentación y modelado matemático, los físicos descubren las leyes naturales que explican desde el movimiento de los objetos cotidianos hasta los fenómenos más extremos del cosmos.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Características Principales -->
+<section class="features-section">
+  <div class="container">
+    <h2 class="section-title centered">Ramas Principales de la Física</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3 class="feature-title">Mecánica</h3>
+        <p class="feature-text">Estudio del movimiento de objetos y las fuerzas que los afectan, desde la mecánica clásica hasta la cuántica.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔋</div>
+        <h3 class="feature-title">Electromagnetismo</h3>
+        <p class="feature-text">Estudio de campos eléctricos y magnéticos, corriente eléctrica y ondas electromagnéticas.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌡️</div>
+        <h3 class="feature-title">Termodinámica</h3>
+        <p class="feature-text">Estudio del calor, temperatura, energía y las leyes que gobiernan los sistemas térmicos.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💫</div>
+        <h3 class="feature-title">Óptica</h3>
+        <p class="feature-text">Estudio de la luz, su comportamiento, reflexión, refracción y fenómenos ondulatorios.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⚛️</div>
+        <h3 class="feature-title">Física Cuántica</h3>
+        <p class="feature-text">Estudio del comportamiento de partículas a escalas atómicas y subatómicas.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌌</div>
+        <h3 class="feature-title">Relatividad</h3>
+        <p class="feature-text">Teorías de Einstein sobre espacio-tiempo, gravedad y el comportamiento a altas velocidades.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Datos Científicos -->
+<section class="data-section">
+  <div class="container">
+    <div class="data-wrapper">
+      <div class="data-header">
+        <h2 class="section-title">Constantes y Leyes Fundamentales</h2>
+        <p class="data-subtitle">Principios esenciales que rigen el universo físico</p>
+      </div>
+      <div class="data-grid">
+        <div class="data-item">
+          <span class="data-label">Velocidad de la Luz</span>
+          <span class="data-value">c = 299,792,458 m/s</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Constante de Planck</span>
+          <span class="data-value">h = 6.626 × 10⁻³⁴ J·s</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Constante de Gravitación</span>
+          <span class="data-value">G = 6.674 × 10⁻¹¹ N·m²/kg²</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Ley de Newton</span>
+          <span class="data-value">F = m·a (Fuerza = masa × aceleración)</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Energía Cinética</span>
+          <span class="data-value">E = ½mv²</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Ley de Gravitación</span>
+          <span class="data-value">F = G(m₁m₂)/r²</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Aplicaciones</span>
+          <span class="data-value">Ingeniería, tecnología, medicina, astronomía</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Hábitat / Funcionamiento -->
+<section class="habitat-section">
+  <div class="container">
+    <div class="habitat-content">
+      <div class="habitat-text">
+        <h2 class="section-title">Física en la Vida Cotidiana</h2>
+        <p class="habitat-description">
+          La física está presente en cada aspecto de nuestra vida diaria: desde la electricidad que ilumina nuestros hogares hasta el GPS que nos guía. Los principios físicos explican por qué los aviones vuelan, cómo funcionan los teléfonos inteligentes y qué hace posible la energía solar.
+        </p>
+        <p class="habitat-description">
+          La comprensión de la física ha permitido desarrollar tecnologías revolucionarias: láseres, computadoras cuánticas, imágenes médicas, satélites y exploración espacial. Sin física, el mundo moderno tal como lo conocemos no existiría.
+        </p>
+        <div class="habitat-stats">
+          <div class="stat-box">
+            <span class="stat-number">c</span>
+            <span class="stat-label">Velocidad de la Luz</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">E</span>
+            <span class="stat-label">Energía y Materia</span>
+          </div>
+        </div>
+      </div>
+      <div class="habitat-image">
+        <div class="image-placeholder large">
+          <span>⚛</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Curiosidades -->
+<section class="curiosities-section">
+  <div class="container">
+    <h2 class="section-title centered">Datos Curiosos</h2>
+    <div class="curiosities-grid">
+      <div class="curiosity-card">
+        <div class="curiosity-number">01</div>
+        <h3 class="curiosity-title">Dilatación del Tiempo</h3>
+        <p class="curiosity-text">A velocidades cercanas a la luz, el tiempo se ralentiza según la relatividad especial de Einstein.</p>
+      </div>
+      <div class="curiosity-card">
+        <div class="curiosity-number">02</div>
+        <h3 class="curiosity-title">Entrelazamiento Cuántico</h3>
+        <p class="curiosity-text">Partículas pueden estar "entrelazadas" y afectarse instantáneamente sin importar la distancia.</p>
+      </div>
+      <div class="curiosity-card">
+        <div class="curiosity-number">03</div>
+        <h3 class="curiosity-title">Ondas Gravitacionales</h3>
+        <p class="curiosity-text">Einstein predijo estas ondas en 1916; fueron detectadas por primera vez en 2015.</p>
+      </div>
+      <div class="curiosity-card">
+        <div class="curiosity-number">04</div>
+        <h3 class="curiosity-title">Superfluidez</h3>
+        <p class="curiosity-text">El helio líquido a bajas temperaturas puede fluir sin fricción y trepar por las paredes.</p>
+      </div>
+      <div class="curiosity-card">
+        <div class="curiosity-number">05</div>
+        <h3 class="curiosity-title">Principio de Incertidumbre</h3>
+        <p class="curiosity-text">Heisenberg demostró que no podemos conocer simultáneamente posición y momento exactos de una partícula.</p>
+      </div>
+      <div class="curiosity-card">
+        <div class="curiosity-number">06</div>
+        <h3 class="curiosity-title">Agujeros Negros</h3>
+        <p class="curiosity-text">Regiones del espacio donde la gravedad es tan intensa que ni la luz puede escapar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Conservación / Gestión -->
+<section class="conservation-section">
+  <div class="container">
+    <div class="conservation-content">
+      <h2 class="section-title">Recursos de Aprendizaje</h2>
+      <p class="conservation-intro">
+        El estudio de la física requiere comprensión conceptual, habilidades matemáticas y experimentación práctica. Existen excelentes recursos para dominar esta ciencia fundamental.
+      </p>
+      <div class="threats-benefits">
+        <div class="threats-box">
+          <h3 class="box-title">📚 Conceptos Clave</h3>
+          <ul class="threats-list">
+            <li>Mecánica clásica y cuántica</li>
+            <li>Electromagnetismo y circuitos</li>
+            <li>Termodinámica y calor</li>
+            <li>Óptica y ondas</li>
+            <li>Relatividad y cosmología</li>
+          </ul>
+        </div>
+        <div class="benefits-box">
+          <h3 class="box-title">💡 Estrategias de Estudio</h3>
+          <ul class="benefits-list">
+            <li>Visualización de conceptos abstractos</li>
+            <li>Resolución de problemas paso a paso</li>
+            <li>Experimentos y demostraciones prácticas</li>
+            <li>Comprensión de las matemáticas subyacentes</li>
+            <li>Relación con fenómenos cotidianos</li>
+          </ul>
+        </div>
+      </div>
+      <div class="zoo-participation">
+        <div class="participation-badge">📖</div>
+        <div class="participation-text">
+          <h3>Recursos Recomendados</h3>
+          <p>Para profundizar en el estudio de física, consulta estas plataformas educativas y recursos especializados.</p>
+          <ul class="benefits-list">
+            <li><a href="https://www.khanacademy.org/science/physics" target="_blank" rel="noopener">Khan Academy - Física</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/F%C3%ADsica" target="_blank" rel="noopener">Wikipedia - Física</a></li>
+            <li><a href="https://www.physicsclassroom.com/" target="_blank" rel="noopener">Physics Classroom</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section" id="contacto">
+  <div class="container">
+    <div class="cta-content">
+      <h2 class="cta-title">Descubre los Secretos del Universo</h2>
+      <p class="cta-text">Explora las leyes fundamentales que gobiernan la materia, la energía y el espacio-tiempo.</p>
+      <div class="cta-buttons">
+        <a href="https://www.khanacademy.org/science/physics" class="btn-primary large" target="_blank" rel="noopener">Aprende en Khan Academy</a>
+        <a href="https://es.wikipedia.org/wiki/F%C3%ADsica" class="btn-secondary large" target="_blank" rel="noopener">Wikipedia</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <footer class="footer">
+        <div class="footer-txt">
+            <p style="display: flex; position: relative; padding: 1.7rem;">Desarrollado por Erik Fabian Esquivel Rodriguez.</p>
+        </div>
+    </footer>
+    
+<script src="assets/scripts/script.js"></script>
+</body>
+</html>
+
