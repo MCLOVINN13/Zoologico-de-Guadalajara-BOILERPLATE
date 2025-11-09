@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecosistema: Bosque de Kelp</title>
+    <link rel="stylesheet" href="../assets/css/ecologia.css">
+</head>
+<body>
+  <svg style="position:absolute; height:0; width:0; overflow:hidden;">
+  <filter id="ajolote-textura">
+    <feTurbulence 
+      type="fractalNoise" 
+      baseFrequency="0.04" 
+      numOctaves="5" 
+      result="noise"/>
+      
+    <feDiffuseLighting 
+      in="noise" 
+      lighting-color="#ffe8e8" 
+      surfaceScale="2" 
+      result="light">
+      <feDistantLight azimuth="235" elevation="40" />
+    </feDiffuseLighting>
+    
+    <feComposite in="SourceGraphic" in2="light" operator="in" />
+  </filter>
+</svg>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="../index.html" class="nav-link" style="font-weight: 700;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Kelp_forest_channel_islands.jpg" alt="Ecología: Bosques de kelp" style="width: 200px; height: auto; border-radius: 8px; object-fit: cover; margin-right: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.25);">
+            </a>
+            <nav>
+                <ul class="nav-menu list-unstyled">
+                    <li class="nav-item"><a href="../ecologia.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Zoologico de guadalajara</a></li>
+                </ul>
+            </nav>
+            <a href="https://www.iucn.org/es/our-work/topic/oceanos-y-costas" class="btn btn-primary" style="padding: 0.5rem;">IUCN: Océanos y Costas</a>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-badge">Ecosistemas Marinos</span>
+    <h1 class="hero-title">Bosque de Kelp: Bosque Submarino de Alta Productividad</h1>
+    <p class="hero-subtitle">Ecosistemas costeros templados: estructura tridimensional, refugio y ciclo de nutrientes</p>
+    <div class="cta-buttons">
+      <a class="btn-primary" href="https://es.wikipedia.org/wiki/Bosque_de_algas" target="_blank" rel="noopener">Leer en Wikipedia</a>
+      <a class="btn-secondary" href="https://www.nationalgeographic.com/environment/article/kelp" target="_blank" rel="noopener">National Geographic</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>Desliza para explorar</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- Introducción -->
+<section class="intro-section" id="secciones">
+  <div class="container">
+    <div class="intro-grid">
+      <div class="intro-image">
+        <div class="image-placeholder">
+          <span>⟁</span>
+        </div>
+      </div>
+      <div class="intro-text">
+        <h2 class="section-title">Bosques de Kelp: Concepto y Contexto</h2>
+        <p class="intro-description">
+          Los bosques de kelp son comunidades submarinas dominadas por algas pardas gigantes (como Macrocystis pyrifera) que forman verdaderos “árboles” marinos de hasta 30 metros de altura. Crecen en costas rocosas frías a templadas con fuerte oleaje y alta disponibilidad de nutrientes.
+        </p>
+        <p class="intro-description">
+          Funcionan como ingenieros del ecosistema: crean sombra, refugio y alimento para cientos de especies, estabilizan el fondo marino y modulan corrientes y luz. Su productividad primaria es comparable a los manglares y las selvas tropicales.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Características Principales -->
+<section class="features-section">
+  <div class="container">
+    <h2 class="section-title centered">Aspectos Destacados del Ecosistema</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">▣</div>
+        <h3 class="feature-title">Alta Productividad</h3>
+        <p class="feature-text">Tasas de crecimiento del kelp: hasta 50 cm por día en condiciones óptimas, alimentando complejas redes tróficas.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">◬</div>
+        <h3 class="feature-title">Arquitectura en Capas</h3>
+        <p class="feature-text">Zona basal (holdfast), columna (stipes/hojas) y dosel superficial. Cada estrato alberga especies distintas.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">✳</div>
+        <h3 class="feature-title">Dependencia de Nutrientes</h3>
+        <p class="feature-text">Florecen con afloramientos fríos ricos en nitrato y fosfato; sensibles a olas de calor marinas.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">◆</div>
+        <h3 class="feature-title">Servicios Ecosistémicos</h3>
+        <p class="feature-text">Protección costera, captura de carbono azul, pesca sustentable y turismo de naturaleza.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">∞</div>
+        <h3 class="feature-title">Interacciones Tróficas</h3>
+        <p class="feature-text">Nutrias marinas, peces y estrellas controlan herbívoros como erizos; el equilibrio evita "desiertos de erizos".</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">◧</div>
+        <h3 class="feature-title">Distribución</h3>
+        <p class="feature-text">Costas templadas y frías del Pacífico y Atlántico; en América destacan California, Baja California y Chile.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Datos Científicos / Ficha del Ecosistema -->
+<section class="data-section">
+  <div class="container">
+    <div class="data-wrapper">
+      <div class="data-header">
+        <h2 class="section-title">Ficha Ambiental del Bosque de Kelp</h2>
+        <p class="data-subtitle">Parámetros físicos, químicos y biológicos esenciales</p>
+      </div>
+      <div class="data-grid">
+        <div class="data-item">
+          <span class="data-label">Profundidad Típica</span>
+          <span class="data-value">5 - 30 m (según claridad y sustrato rocoso)</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Temperatura</span>
+          <span class="data-value">8 - 18°C (aguas frías-templadas)</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Iluminación</span>
+          <span class="data-value">Alta a moderada; el dosel reduce luz en el fondo</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Sustrato</span>
+          <span class="data-value">Rocoso duro para el anclaje del holdfast</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Productores Primarios</span>
+          <span class="data-value">Kelp gigante, kelp toro, algas rojas y pardas</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Consumidores Clave</span>
+          <span class="data-value">Erizos, peces roca, caracoles, crustáceos, nutrias</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Estado</span>
+          <span class="data-value status-critical">Vulnerable a olas de calor y sobrepoblación de erizos</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Hábitat / Funcionamiento -->
+<section class="habitat-section">
+  <div class="container">
+    <div class="habitat-content">
+      <div class="habitat-text">
+        <h2 class="section-title">Dinámica del Hábitat</h2>
+        <p class="habitat-description">
+          El kelp se fija al sustrato mediante un holdfast sin raíces verdaderas. Los estipes crecen hacia la superficie formando un dosel que amortigua el oleaje y provee refugio. Fragmentos desprendidos siguen fotosintetizando y exportan energía a playas y fondos profundos.
+        </p>
+        <p class="habitat-description">
+          Los erizos marinos pueden convertir el bosque en "barrens" cuando carecen de depredadores. La presencia de nutrias marinas y peces depredadores mantiene el equilibrio, permitiendo la recuperación del dosel tras tormentas.
+        </p>
+        <div class="habitat-stats">
+          <div class="stat-box">
+            <span class="stat-number">≈</span>
+            <span class="stat-label">Amortiguación de Oleaje</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">▤</span>
+            <span class="stat-label">Exportación de Detritos Verdes</span>
+          </div>
+        </div>
+      </div>
+      <div class="habitat-image">
+        <div class="image-placeholder large">
+          <span>◌</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Curiosidades / Hechos Rápidos -->
+<section class="curiosities-section">
+  <div class="container">
+    <h2 class="section-title centered">Datos Interesantes</h2>
+    <div class="curiosities-grid">
+      <div class="curiosity-card">
+        <div class="curiosity-number">01</div>
+        <h3 class="curiosity-title">Crecimiento Extraordinario</h3>
+        <p class="curiosity-text">Macrocystis puede crecer decenas de centímetros por día, entre los organismos de más rápido crecimiento del planeta.</p>
+      </div>
+      <div class="curiosity-card">
+        <div class="curiosity-number">02</div>
+        <h3 class="curiosity-title">Vivero para Juveniles</h3>
+        <p class="curiosity-text">El dosel y el sotobosque sirven como viveros para peces comerciales y especies endémicas.</p>
+      </div>
+      <div class="curiosity-card">
+        <div class="curiosity-number">03</div>
+        <h3 class="curiosity-title">Secuestro de Carbono Azul</h3>
+        <p class="curiosity-text">Parte del kelp se exporta a aguas profundas, secuestrando carbono a largo plazo.</p>
+      </div>
+      <div class="curiosity-card">
+        <div class="curiosity-number">04</div>
+        <h3 class="curiosity-title">Ingeniería Ecosistémica</h3>
+        <p class="curiosity-text">La compleja estructura tridimensional reduce la energía de las olas y la erosión costera.</p>
+      </div>
+      <div class="curiosity-card">
+        <div class="curiosity-number">05</div>
+        <h3 class="curiosity-title">Uso en Bioproductos</h3>
+        <p class="curiosity-text">Alginas extraídas del kelp se usan en alimentos, farmacéutica y bioplásticos.</p>
+      </div>
+      <div class="curiosity-card">
+        <div class="curiosity-number">06</div>
+        <h3 class="curiosity-title">Indicador del Océano</h3>
+        <p class="curiosity-text">Su salud indica cambios en temperatura, nutrientes y contaminación costera.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Conservación / Gestión -->
+<section class="conservation-section">
+  <div class="container">
+    <div class="conservation-content">
+      <h2 class="section-title">Conservación y Gestión del Kelp</h2>
+      <p class="conservation-intro">
+        La resiliencia del kelp depende de depredadores tope, calidad del agua y variabilidad climática. La gestión ecosistémica y basada en evidencia es esencial para su futuro.
+      </p>
+      <div class="threats-benefits">
+        <div class="threats-box">
+          <h3 class="box-title">🚨 Amenazas</h3>
+          <ul class="threats-list">
+            <li>Olas de calor marinas y El Niño (estrés térmico y reducción de nutrientes)</li>
+            <li>Sobrepoblación de erizos por ausencia de depredadores</li>
+            <li>Contaminación y eutrofización costera</li>
+            <li>Tormentas intensas que arrancan el dosel</li>
+            <li>Especies invasoras que compiten por luz y espacio</li>
+          </ul>
+        </div>
+        <div class="benefits-box">
+          <h3 class="box-title">💚 Acciones Clave</h3>
+          <ul class="benefits-list">
+            <li>Áreas Marinas Protegidas y vedas para depredadores nativos</li>
+            <li>Control ecológico de erizos y restauración con trasplante de kelp</li>
+            <li>Monitoreo de calidad de agua y reducción de descargas</li>
+            <li>Manejo adaptativo frente a eventos cálidos extremos</li>
+            <li>Educación, ciencia ciudadana y turismo responsable</li>
+          </ul>
+        </div>
+      </div>
+      <div class="zoo-participation">
+        <div class="participation-badge">ⓘ</div>
+        <div class="participation-text">
+          <h3>Fuentes Consultadas</h3>
+          <p>Esta informacion se consulto en las siguientes instituciones y repositorios científicos especializados en ecosistemas marinos. <br> Para consultar fuentes oficiales ingrese a los siguientes links.</p>
+          <ul class="benefits-list">
+            <li><a href="https://www.iucn.org/es/our-work/topic/oceanos-y-costas" target="_blank" rel="noopener">IUCN – Océanos y Costas</a></li>
+            <li><a href="https://ocean.si.edu/ocean-life/seaweeds-and-algae/kelp-forests" target="_blank" rel="noopener">Smithsonian Ocean: Kelp Forests</a></li>
+            <li><a href="https://www.noaa.gov/education/resource-collections/marine-life/kelp-forests" target="_blank" rel="noopener">NOAA: Kelp Forests</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section" id="contacto">
+  <div class="container">
+    <div class="cta-content">
+      <h2 class="cta-title">Aprende más sobre el Bosque de Kelp</h2>
+      <p class="cta-text">Explora artículos, recursos educativos y proyectos de restauración en instituciones especializadas.</p>
+      <div class="cta-buttons">
+        <a href="https://es.wikipedia.org/wiki/Bosque_de_algas" class="btn-primary large" target="_blank" rel="noopener">Artículo en Wikipedia</a>
+        <a href="https://www.pnas.org/doi/10.1073/pnas.2021092118" class="btn-secondary large" target="_blank" rel="noopener">Investigación (PNAS)</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <footer class="footer">
+        <div class="footer-txt">
+            <p style="display: flex; position: relative; padding: 1.7rem;">Desarrollado por Erik Fabian Esquivel Rodriguez.</p>
+        </div>
+    </footer>
+    
+<script href="../assets/scripts/script.js"></script>
+</body>
+</html>
