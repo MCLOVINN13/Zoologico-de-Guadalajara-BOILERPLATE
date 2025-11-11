@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas: El Lenguaje del Universo</title>
+    <link rel="stylesheet" href="assets/css/matematicas.css">
+</head>
+<body>
+  <svg style="position:absolute; height:0; width:0; overflow:hidden;">
+  <filter id="matematicas-textura">
+    <feTurbulence 
+      type="fractalNoise" 
+      baseFrequency="0.04" 
+      numOctaves="5" 
+      result="noise"/>
+      
+    <feDiffuseLighting 
+      in="noise" 
+      lighting-color="#fff4e6" 
+      surfaceScale="2" 
+      result="light">
+      <feDistantLight azimuth="235" elevation="40" />
+    </feDiffuseLighting>
+    
+    <feComposite in="SourceGraphic" in2="light" operator="in" />
+  </filter>
+</svg>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="nav-link nav-brand" aria-label="Inicio">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Mathematical_equations.svg/800px-Mathematical_equations.svg.png" alt="Matemáticas" style="width: 200px; height: auto; border-radius: 8px; object-fit: cover; margin-right: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.25);">
+            </a>
+            <nav>
+                <ul class="nav-menu list-unstyled">
+                    <li class="nav-item"><a href="matematicas.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Zoológico de Guadalajara</a></li>
+                </ul>
+            </nav>
+            <a href="https://www.khanacademy.org/math" class="btn btn-primary header-cta">Khan Academy: Matemáticas</a>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-badge">Ciencia Exacta</span>
+    <h1 class="hero-title">Matemáticas: El Lenguaje del Universo</h1>
+    <p class="hero-subtitle">Descubre la belleza y el poder de los números, las formas y las estructuras matemáticas</p>
+    <div class="cta-buttons">
+      <a class="btn-primary" href="https://es.wikipedia.org/wiki/Matem%C3%A1ticas" target="_blank" rel="noopener">Leer en Wikipedia</a>
+      <a class="btn-secondary" href="https://www.khanacademy.org/math" target="_blank" rel="noopener">Khan Academy</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>Desliza para explorar</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- Introducción -->
+<section class="intro-section" id="secciones">
+  <div class="container">
+    <div class="intro-grid">
+      <div class="intro-image">
+        <div class="image-placeholder">
+          <span>∑</span>
+        </div>
+      </div>
+      <div class="intro-text">
+        <h2 class="section-title">Matemáticas: Concepto y Contexto</h2>
+        <p class="intro-description">
+          Las matemáticas son el estudio de patrones, estructuras, cantidades y relaciones. Desde la aritmética básica hasta el cálculo avanzado, las matemáticas proporcionan herramientas esenciales para entender el mundo que nos rodea.
+        </p>
+        <p class="intro-description">
+          Son fundamentales en ciencias, ingeniería, economía, informática y muchas otras disciplinas. Las matemáticas nos permiten modelar fenómenos naturales, resolver problemas complejos y descubrir verdades universales.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Características Principales -->
+<section class="features-section">
+  <div class="container">
+    <h2 class="section-title centered">Ramas Principales de las Matemáticas</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">+</div>
+        <h3 class="feature-title">Álgebra</h3>
+        <p class="feature-text">Estudio de estructuras, relaciones y cantidades mediante símbolos y operaciones matemáticas.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">△</div>
+        <h3 class="feature-title">Geometría</h3>
+        <p class="feature-text">Estudio de formas, tamaños, posiciones y propiedades del espacio y las figuras.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">∫</div>
+        <h3 class="feature-title">Cálculo</h3>
+        <p class="feature-text">Estudio de cambio y acumulación mediante derivadas e integrales.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">π</div>
+        <h3 class="feature-title">Trigonometría</h3>
+        <p class="feature-text">Estudio de las relaciones entre ángulos y lados de triángulos.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">∞</div>
+        <h3 class="feature-title">Análisis</h3>
+        <p class="feature-text">Estudio riguroso de límites, continuidad, series y funciones.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">Σ</div>
+        <h3 class="feature-title">Estadística</h3>
+        <p class="feature-text">Recolección, análisis e interpretación de datos para tomar decisiones informadas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Datos Científicos -->
+<section class="data-section">
+  <div class="container">
+    <div class="data-wrapper">
+      <div class="data-header">
+        <h2 class="section-title">Conceptos Fundamentales</h2>
+        <p class="data-subtitle">Principios y herramientas esenciales de las matemáticas</p>
+      </div>
+      <div class="data-grid">
+        <div class="data-item">
+          <span class="data-label">Números Reales</span>
+          <span class="data-value">Incluyen enteros, racionales e irracionales</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Teorema de Pitágoras</span>
+          <span class="data-value">a² + b² = c² en triángulos rectángulos</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Número π (Pi)</span>
+          <span class="data-value">Aproximadamente 3.14159...</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Número e</span>
+          <span class="data-value">Base de los logaritmos naturales ≈ 2.71828</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Derivada</span>
+          <span class="data-value">Tasa de cambio instantánea de una función</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Integral</span>
+          <span class="data-value">Acumulación de cantidades bajo una curva</span>
+        </div>
+        <div class="data-item">
+          <span class="data-label">Aplicaciones</span>
+          <span class="data-value">Física, ingeniería, economía, ciencias de datos</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Hábitat / Funcionamiento -->
+<section class="habitat-section">
+  <div class="container">
+    <div class="habitat-content">
+      <div class="habitat-text">
+        <h2 class="section-title">Aplicaciones en la Vida Real</h2>
+        <p class="habitat-description">
+          Las matemáticas están presentes en todos los aspectos de nuestra vida: desde calcular el cambio en una compra hasta modelar el clima global. Los ingenieros usan cálculo para diseñar puentes, los economistas usan estadística para predecir tendencias, y los programadores usan lógica matemática para crear algoritmos.
+        </p>
+        <p class="habitat-description">
+          La capacidad de las matemáticas para modelar fenómenos complejos las convierte en una herramienta indispensable para el avance científico y tecnológico. Sin matemáticas, no tendríamos computadoras, GPS, medicina moderna ni exploración espacial.
+        </p>
+        <div class="habitat-stats">
+          <div class="stat-box">
+            <span class="stat-number">∞</span>
+            <span class="stat-label">Aplicaciones Infinitas</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">π</span>
+            <span class="stat-label">Precisión Universal</span>
+          </div>
+        </div>
+      </div>
+      <div class="habitat-image">
+        <div class="image-placeholder large">
+          <span>√</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Curiosidades -->
+<section class="curiosities-section">
+  <div class="container">
+    <h2 class="section-title centered">Datos Curiosos</h2>
+    <div class="curiosities-grid">
+      <div class="curiosity-card">
+        <div class="curiosity-number">01</div>
+        <h3 class="curiosity-title">El Cero es Reciente</h3>
+        <p class="curiosity-text">El concepto de cero como número fue desarrollado en la India alrededor del siglo V d.C.</p>
+      </div>
+      <div class="curiosity-card">
+        <div class="curiosity-number">02</div>
+        <h3 class="curiosity-title">Número de Oro</h3>
+        <p class="curiosity-text">φ (phi) ≈ 1.618 aparece en la naturaleza, arte y arquitectura como proporción perfecta.</p>
+      </div>
+      <div class="curiosity-card">
+        <div class="curiosity-number">03</div>
+        <h3 class="curiosity-title">Problema de los 7 Puentes</h3>
+        <p class="curiosity-text">Euler resolvió este problema fundando la teoría de grafos y topología.</p>
+      </div>
+      <div class="curiosity-card">
+        <div class="curiosity-number">04</div>
+        <h3 class="curiosity-title">Fractales en la Naturaleza</h3>
+        <p class="curiosity-text">Los copos de nieve, helechos y costas siguen patrones fractales matemáticos.</p>
+      </div>
+      <div class="curiosity-card">
+        <div class="curiosity-number">05</div>
+        <h3 class="curiosity-title">Teorema de Fermat</h3>
+        <p class="curiosity-text">Tardó 358 años en ser demostrado, siendo uno de los problemas más famosos de la historia.</p>
+      </div>
+      <div class="curiosity-card">
+        <div class="curiosity-number">06</div>
+        <h3 class="curiosity-title">Matemáticas y Música</h3>
+        <p class="curiosity-text">Las escalas musicales y armonías están basadas en relaciones matemáticas precisas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Conservación / Gestión -->
+<section class="conservation-section">
+  <div class="container">
+    <div class="conservation-content">
+      <h2 class="section-title">Recursos de Aprendizaje</h2>
+      <p class="conservation-intro">
+        El aprendizaje de matemáticas requiere práctica constante y recursos de calidad. Existen numerosas plataformas y métodos para dominar esta disciplina fundamental.
+      </p>
+      <div class="threats-benefits">
+        <div class="threats-box">
+          <h3 class="box-title">📚 Conceptos Clave</h3>
+          <ul class="threats-list">
+            <li>Álgebra básica y avanzada</li>
+            <li>Geometría euclidiana y analítica</li>
+            <li>Cálculo diferencial e integral</li>
+            <li>Probabilidad y estadística</li>
+            <li>Álgebra lineal y matrices</li>
+          </ul>
+        </div>
+        <div class="benefits-box">
+          <h3 class="box-title">💡 Estrategias de Estudio</h3>
+          <ul class="benefits-list">
+            <li>Práctica diaria de problemas</li>
+            <li>Comprensión conceptual antes que memorización</li>
+            <li>Uso de visualizaciones y gráficos</li>
+            <li>Resolución de problemas paso a paso</li>
+            <li>Colaboración y discusión con pares</li>
+          </ul>
+        </div>
+      </div>
+      <div class="zoo-participation">
+        <div class="participation-badge">📖</div>
+        <div class="participation-text">
+          <h3>Recursos Recomendados</h3>
+          <p>Para profundizar en el estudio de matemáticas, consulta estas plataformas educativas y recursos especializados.</p>
+          <ul class="benefits-list">
+            <li><a href="https://www.khanacademy.org/math" target="_blank" rel="noopener">Khan Academy - Matemáticas</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Matem%C3%A1ticas" target="_blank" rel="noopener">Wikipedia - Matemáticas</a></li>
+            <li><a href="https://www.wolframalpha.com/" target="_blank" rel="noopener">Wolfram Alpha - Calculadora</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section" id="contacto">
+  <div class="container">
+    <div class="cta-content">
+      <h2 class="cta-title">Explora el Mundo de las Matemáticas</h2>
+      <p class="cta-text">Sumérgete en el fascinante universo de los números, las formas y las estructuras matemáticas.</p>
+      <div class="cta-buttons">
+        <a href="https://www.khanacademy.org/math" class="btn-primary large" target="_blank" rel="noopener">Aprende en Khan Academy</a>
+        <a href="https://es.wikipedia.org/wiki/Matem%C3%A1ticas" class="btn-secondary large" target="_blank" rel="noopener">Wikipedia</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <footer class="footer">
+        <div class="footer-txt">
+            <p style="display: flex; position: relative; padding: 1.7rem;">Desarrollado por Erik Fabian Esquivel Rodriguez.</p>
+        </div>
+    </footer>
+    
+<script src="assets/scripts/script.js"></script>
+</body>
+</html>
+
